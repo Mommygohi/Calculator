@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="interface.css">
+    <title></title>
+  </head>
+
+  <body>
+    <center><div id="output"></div></center>
+    <center><table>
+      <tr>
+        <td colspan="2"><input type="button" value="Submit" onclick="process('submit')"></td>
+        <td colspan="2"><input type="button" value="Clear" onclick="process('clear')"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="button" value="(" onclick="process('(')"></td>
+        <td colspan="2"><input type="button" value=")" onclick="process(')')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="process('1')"></td>
+        <td><input type="button" value="2" onclick="process('2')"></td>
+        <td><input type="button" value="3" onclick="process('3')"></td>
+        <td><input type="button" value="+" onclick="process('+')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="process('4')"></td>
+        <td><input type="button" value="5" onclick="process('5')"></td>
+        <td><input type="button" value="6" onclick="process('6')"></td>
+        <td><input type="button" value="-" onclick="process('-')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="process('7')"></td>
+        <td><input type="button" value="8" onclick="process('8')"></td>
+        <td><input type="button" value="9" onclick="process('9')"></td>
+        <td><input type="button" value="*" onclick="process('*')"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="button" value="0" onclick="process('0')"></td>
+        <td><input type="button" value="." onclick="process('.')"></td>
+        <td><input type="button" value="/" onclick="process('/')"></td>
+      </tr>
+    </table></center>
+    <script src="main.js"></script>
+  </body>
+</html>
