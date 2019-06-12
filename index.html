@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="interface.css">
+    <style>
+      
+    </style>
     <title></title>
   </head>
 
@@ -40,6 +42,20 @@
         <td><input type="button" value="/" onclick="process('/')"></td>
       </tr>
     </table></center>
-    <script src="main.js"></script>
+    <script>
+      function process(value){
+        if(value == "clear"){
+          document.getElementById("output").innerText = "";
+        } else if(value == "submit"){
+          calculate();
+        } else {
+          document.getElementById("output").innerText += value;
+        }
+      }
+
+      function calculate(){
+        document.getElementById("output").innerText = eval(document.getElementById("output").innerText);
+      }
+    </script>
   </body>
 </html>
